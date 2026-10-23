@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Praktikum 8 - Chetrin Fransisca (825230185)</title>
+  <!-- CSS BOOTSTRAP 5.3 (offline, dari folder css) -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <!-- INI UNTUK BAGIAN MENU -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Frontend Chetrin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#berita">Ringkasan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Materi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#galeri">Bab II - CSS</a></li>
+              <li><a class="dropdown-item" href="#galeri">Bab III - JavaScript Dasar</a></li>
+              <li><a class="dropdown-item" href="#galeri">Bab IV - Fungsi, Event, DOM</a></li>
+              <li><a class="dropdown-item" href="#galeri">Bab VI - jQuery &amp; AJAX</a></li>
+              <li><a class="dropdown-item" href="#galeri">Bab VII - Bootstrap</a></li>
+              <li><a class="dropdown-item" href="#galeri">Bab VIII - Dashboard</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Pertemuan 9 - Web Responsive</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeri">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profil">Profil</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cari materi" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- AKHIR BAGIAN MENU -->
+
+  <!-- MEMBUAT TAMPILAN SLIDER -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide1.jpg" class="d-block w-100" alt="Web Responsive">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Web Responsive dengan Bootstrap 5.3</h5>
+          <p>Satu halaman yang menyesuaikan diri di HP, tablet, dan laptop.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide2.jpg" class="d-block w-100" alt="jQuery dan AJAX">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>jQuery &amp; AJAX</h5>
+          <p>Mengambil data film dari API TMDb tanpa reload halaman.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide3.jpg" class="d-block w-100" alt="Bootstrap">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Komponen Bootstrap</h5>
+          <p>Navbar, card, button, dan grid yang siap pakai.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- AKHIR TAMPILAN SLIDER -->
+
+  <!-- MEMBUAT KOLOM-KOLOM GRID BOOTSTRAP -->
+  <div class="container">
+    <div class="row atas mt-5" id="berita">
+      <div class="col-sm-8">
+        <h4 class="mb-3">Ringkasan Materi</h4>
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/thumb_css.jpg" width="100" height="auto" class="rounded" alt="No Picture">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h5>Cascading Style Sheets (CSS)</h5>
+            CSS dipakai untuk mengatur tampilan elemen HTML: warna, font, margin, padding, border,
+            dan posisi. Saya belajar tiga cara memasang CSS (inline, internal, eksternal) serta
+            selector berdasarkan tag, class, dan id.
+          </div>
+        </div>
+        <div class="d-flex mt-3">
+          <div class="flex-shrink-0">
+            <img src="images/thumb_js.jpg" width="100" height="auto" class="rounded" alt="No Picture">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h5>JavaScript, Fungsi, Event, dan DOM</h5>
+            JavaScript membuat halaman menjadi interaktif. Materinya meliputi variabel, tipe data,
+            operator, percabangan, perulangan, fungsi, event seperti onclick, sampai manipulasi
+            elemen halaman lewat DOM (getElementById, innerHTML).
+          </div>
+        </div>
+      </div> <!-- penutup class col-sm-8 -->
+      <div class="col-sm-4 mt-4 mt-sm-0">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Tugas Praktikum 8</h5>
+              <small>Pertemuan 9</small>
+            </div>
+            <p class="mb-1">Web responsive dengan Bootstrap 5.3.</p>
+            <small>Deadline 21 Oktober 2026, 23:59</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Dashboard Bootstrap</h5>
+              <small class="text-body-secondary">Bab VIII</small>
+            </div>
+            <p class="mb-1">Layout admin dengan sidebar, card, dan tabel.</p>
+            <small class="text-body-secondary">Grid dan komponen Bootstrap.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bootstrap Dasar</h5>
+              <small class="text-body-secondary">Bab VII</small>
+            </div>
+            <p class="mb-1">Mengenal framework CSS Bootstrap.</p>
+            <small class="text-body-secondary">Button, card, navbar, form.</small>
+          </a>
+        </div>
+      </div> <!-- penutup class col-sm-4 -->
+    </div> <!-- penutup row atas mt5 -->
+
+    <div class="row tengah mt-5 g-4">
+      <div class="col-sm-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title">Mobile First</h5>
+            <p class="card-text">Bootstrap merancang tampilan untuk layar HP lebih dulu, lalu
+              ditambah aturan untuk layar yang lebih lebar.</p>
+          </div>
+        </div>
+      </div> <!-- penutup class col-sm-4 -->
+      <div class="col-sm-4">
+        <div class="card h-100 border-success">
+          <div class="card-body">
+            <h5 class="card-title">Grid 12 Kolom</h5>
+            <p class="card-text">Satu baris dibagi maksimal 12 kolom. Contohnya halaman ini:
+              baris atas 8 + 4, baris tengah 4 + 4 + 4.</p>
+          </div>
+        </div>
+      </div> <!-- penutup class col-sm-4 -->
+      <div class="col-sm-4">
+        <div class="card h-100 border-danger">
+          <div class="card-body">
+            <h5 class="card-title">6 Breakpoint</h5>
+            <p class="card-text">xs (&lt;576px), sm (&ge;576px), md (&ge;768px), lg (&ge;992px),
+              xl (&ge;1200px), dan xxl (&ge;1400px).</p>
+          </div>
+        </div>
+      </div> <!-- penutup class col-sm-4 -->
+    </div> <!-- penutup row tengah mt5 -->
+
+    <div class="row bawah mt-5" id="profil">
+      <div class="col-sm-4">
+        <div class="card text-bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title">Profil Mahasiswa</h5>
+            <p class="card-text mb-1">Nama: <strong>Chetrin Fransisca</strong></p>
+            <p class="card-text">NIM: <strong>825230185</strong></p>
+            <span class="badge text-bg-primary">Pemrograman Front End</span>
+          </div>
+        </div>
+      </div> <!-- penutup class col-sm-4 -->
+      <div class="col-sm-8 mt-4 mt-sm-0">
+        <h5>Cara Membuat Halaman Ini</h5>
+        <div class="row mt-2">
+          <div class="col-sm-7">
+            <ol class="mb-0">
+              <li>Unduh Bootstrap 5.3 (compiled CSS dan JS).</li>
+              <li>Salin bootstrap.min.css ke folder css dan bootstrap.bundle.min.js ke folder js.</li>
+              <li>Tambahkan navbar, carousel, grid, media object, list group, dan figure.</li>
+            </ol>
+          </div>
+          <div class="col-sm-5">
+            <table class="table table-sm table-bordered mt-3 mt-sm-0">
+              <thead><tr><th>Layar</th><th>Galeri</th></tr></thead>
+              <tbody>
+                <tr><td>Laptop (lg)</td><td>3 foto per baris</td></tr>
+                <tr><td>Tablet (sm)</td><td>2 foto per baris</td></tr>
+                <tr><td>HP (xs)</td><td>1 foto per baris</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- penutup class row -->
+      </div> <!-- penutup class col-sm-8 -->
+    </div> <!-- penutup row bawah mt5 -->
+
+  </div> <!-- penutup container -->
+  <!-- AKHIR GRID BOOTSTRAP -->
+
+  <!-- MEMBUAT GALERI FOTO -->
+  <div class="container" id="galeri">
+    <h1 class="mt-5 mb-5" style="text-align: center">Galeri Foto</h1>
+    <div class="row g-4">
+      <!-- Gambar 1 -->
+      <figure class="figure col-lg-4 col-sm-6 col-12">
+        <img src="images/galeri1.jpg" class="figure-img img-fluid rounded" alt="CSS">
+        <figcaption class="figure-caption text-start">Bab II - CSS</figcaption>
+      </figure>
+      <!-- Gambar 2 -->
+      <figure class="figure col-lg-4 col-sm-6 col-12">
+        <img src="images/galeri2.jpg" class="figure-img img-fluid rounded" alt="JavaScript">
+        <figcaption class="figure-caption text-end">Bab III - JavaScript Dasar</figcaption>
+      </figure>
+      <!-- Gambar 3 -->
+      <figure class="figure col-lg-4 col-sm-6 col-12">
+        <img src="images/galeri3.jpg" class="figure-img img-fluid rounded" alt="DOM dan Event">
+        <figcaption class="figure-caption text-start">Bab IV - Fungsi, Event, DOM</figcaption>
+      </figure>
+      <!-- Gambar 4 -->
+      <figure class="figure col-lg-4 col-sm-6 col-12">
+        <img src="images/galeri4.jpg" class="figure-img img-fluid rounded" alt="jQuery dan AJAX">
+        <figcaption class="figure-caption text-end">Bab VI - jQuery &amp; AJAX</figcaption>
+      </figure>
+      <!-- Gambar 5 -->
+      <figure class="figure col-lg-4 col-sm-6 col-12">
+        <img src="images/galeri5.jpg" class="figure-img img-fluid rounded" alt="Bootstrap">
+        <figcaption class="figure-caption text-start">Bab VII - Bootstrap</figcaption>
+      </figure>
+      <!-- Gambar 6 -->
+      <figure class="figure col-lg-4 col-sm-6 col-12">
+        <img src="images/galeri6.jpg" class="figure-img img-fluid rounded" alt="Dashboard">
+        <figcaption class="figure-caption text-end">Bab VIII - Dashboard</figcaption>
+      </figure>
+    </div>
+  </div>
+  <!-- AKHIR GALERI -->
+
+  <!-- FOOTER -->
+  <footer class="bg-body-tertiary text-center py-3 mt-4">
+    <small>&copy; 2026 Chetrin Fransisca &middot; NIM 825230185 &middot; Tugas Praktikum 8 Front End</small>
+  </footer>
+
+</body>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
